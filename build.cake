@@ -103,7 +103,7 @@ Task("Publish-MyGet")
 
         };
 
-        var pkgs = GetFiles("./nuget/.nupkg");
+        var pkgs = GetFiles("./nuget/*.nupkg");
         foreach(var pkg in pkgs) 
         {
                 Information($"Publishing \"{pkg}\".");
